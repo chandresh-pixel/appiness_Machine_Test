@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>All Links</title>
+</head>
+<body>
+<div>
+    <h4>All Links and their Short Links</h4>
+    <div>
+        {% if links %}
+        <table style="width:100%;border: 1px solid black;">
+
+          <tr >
+            <th style="border: 1px solid black;">Link</th>
+              <th style="border: 1px solid black;">Short Link</th>
+
+          </tr>
+            {% for l in links %}
+          <tr >
+            <td style="border: 1px solid black;">{{l.link}}</td>
+              <td style="border: 1px solid black;">{{l.short_link}}</td>
+
+          </tr>
+            {% endfor %}
+        </table>
+
+        {% endif %}
+    </div>
+
+
+    </div>
+
+</body>
+</html>
